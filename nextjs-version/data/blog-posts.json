@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Welcome to Our Gaming Community!",
+    "slug": "welcome",
+    "date": "July 1, 2024",
+    "category": "Announcement",
+    "excerpt": "Welcome to the official gaming community website! We're excited to have you here.",
+    "content": "Welcome to the official gaming community website! We're excited to have you here. This is where we share tournament updates, community events, member spotlights, gaming news, and stream announcements. Check out our member roster, view upcoming events, and join our Discord server!"
+  },
+  {
+    "title": "July Tournament Schedule Announced",
+    "slug": "july-tournament-schedule",
+    "date": "June 28, 2024",
+    "category": "Tournaments",
+    "excerpt": "Exciting tournaments coming up this July across multiple games!",
+    "content": "Get ready for an action-packed July! We have tournaments scheduled for Valorant, League of Legends, and CS:GO. Whether you're a competitive player or casual gamer, there's something for everyone. Registration opens next week!"
+  },
+  {
+    "title": "Community Spotlight: Meet the Organizers",
+    "slug": "community-spotlight",
+    "date": "June 25, 2024",
+    "category": "Community",
+    "excerpt": "Learn more about the amazing people behind the scenes!",
+    "content": "This week we're highlighting our tournament organizers and community managers who make everything possible. These dedicated individuals work tirelessly to create amazing experiences for our gaming community."
+  }
+]

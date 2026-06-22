@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Player One",
+    "role": "Lead Streamer",
+    "game": "League of Legends",
+    "rank": "Diamond 1",
+    "avatar": "/gaming-community-website/images/members/player1.jpg",
+    "bio": "Competitive player and content creator",
+    "links": {
+      "twitch": "https://twitch.tv",
+      "twitter": "https://twitter.com"
+    }
+  },
+  {
+    "name": "Player Two",
+    "role": "Tournament Organizer",
+    "game": "Valorant",
+    "rank": "Immortal",
+    "avatar": "/gaming-community-website/images/members/player2.jpg",
+    "bio": "Esports enthusiast and organizer",
+    "links": {
+      "discord": "https://discord.com",
+      "twitter": "https://twitter.com"
+    }
+  },
+  {
+    "name": "Player Three",
+    "role": "Community Manager",
+    "game": "CS:GO",
+    "rank": "Global Elite",
+    "avatar": "/gaming-community-website/images/members/player3.jpg",
+    "bio": "Community leader and content moderator",
+    "links": {
+      "twitch": "https://twitch.tv",
+      "youtube": "https://youtube.com"
+    }
+  }
+]

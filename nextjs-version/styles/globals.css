@@ -1,0 +1,208 @@
+:root {
+  --primary-color: #FF6B35;
+  --secondary-color: #004E89;
+  --dark-bg: #1a1a1a;
+  --light-text: #ffffff;
+  --card-bg: #2a2a2a;
+  --border-color: #444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--dark-bg);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--light-text);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 78, 137, 0.4);
+}
+
+/* Grids */
+.featured-grid,
+.members-grid,
+.events-list,
+.tournaments-grid,
+.blog-grid,
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Cards */
+.feature-card,
+.member-card,
+.event-card,
+.tournament-card,
+.blog-card,
+.news-card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover,
+.member-card:hover,
+.event-card:hover,
+.tournament-card:hover,
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.2);
+}
+
+.feature-card .icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Member Cards */
+.member-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--primary-color);
+}
+
+.game-badge {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--dark-bg);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+/* Event Cards */
+.event-card {
+  display: flex;
+  gap: 1.5rem;
+  border-left: none;
+}
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--dark-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 80px;
+  font-weight: bold;
+}
+
+.event-info {
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .event-card {
+    flex-direction: column;
+  }
+
+  .featured-grid,
+  .members-grid,
+  .events-list,
+  .tournaments-grid,
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}

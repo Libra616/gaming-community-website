@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Spring Championship 2024",
+    "date": "2024-06-01",
+    "winner": "Dragon Slayers",
+    "runner_up": "Phoenix Rising",
+    "prize_pool": "$5000",
+    "participants": "12",
+    "game": "League of Legends"
+  },
+  {
+    "name": "Valorant Season 1",
+    "date": "2024-05-15",
+    "winner": "Elite Squad",
+    "runner_up": "Shadow Team",
+    "prize_pool": "$2500",
+    "participants": "8",
+    "game": "Valorant"
+  },
+  {
+    "name": "CS:GO Cup",
+    "date": "2024-04-20",
+    "winner": "Tactical Legends",
+    "runner_up": "Precision Strike",
+    "prize_pool": "$1000",
+    "participants": "10",
+    "game": "CS:GO"
+  }
+]

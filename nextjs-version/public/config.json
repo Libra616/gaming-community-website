@@ -1,0 +1,14 @@
+{
+  "communityName": "Gaming Community",
+  "communityTagline": "Where Gamers Unite",
+  "logo": "/gaming-community-website/images/logo.png",
+  "theme": "dark",
+  "primaryColor": "#FF6B35",
+  "secondaryColor": "#004E89",
+  "social": {
+    "discord": "https://discord.gg/",
+    "twitch": "https://twitch.tv/",
+    "youtube": "https://youtube.com/",
+    "twitter": "https://twitter.com/"
+  }
+}
