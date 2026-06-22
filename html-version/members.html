@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Members - Gaming Community</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Gaming Community</div>
+        <button class="menu-toggle" id="menuToggle">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="members.html" class="active">Members</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="tournaments.html">Tournaments</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="members-page">
+      <h1>Community Members</h1>
+      <p>Meet the talented players and organizers in our community</p>
+
+      <div class="members-controls">
+        <input type="text" id="searchInput" placeholder="Search members..." class="search-input" />
+        <div class="filter-buttons" id="filterButtons"></div>
+      </div>
+
+      <div class="members-grid" id="membersGrid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Copyright 2024 Gaming Community. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#discord">Discord</a></li>
+        <li><a href="#twitter">Twitter</a></li>
+        <li><a href="#twitch">Twitch</a></li>
+        <li><a href="#youtube">YouTube</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="lib/utils.js"></script>
+  <script src="js/members.js"></script>
+</body>
+</html>

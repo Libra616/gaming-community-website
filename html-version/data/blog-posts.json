@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Welcome to Our Gaming Community",
+    "slug": "welcome",
+    "date": "July 1, 2024",
+    "category": "Announcement",
+    "excerpt": "Welcome to our community website",
+    "content": "Welcome to the official gaming community website"
+  },
+  {
+    "title": "July Tournament Schedule",
+    "slug": "july-tournament-schedule",
+    "date": "June 28, 2024",
+    "category": "Tournaments",
+    "excerpt": "Tournaments coming up this July",
+    "content": "Get ready for an action-packed July with tournaments"
+  },
+  {
+    "title": "Community Spotlight",
+    "slug": "community-spotlight",
+    "date": "June 25, 2024",
+    "category": "Community",
+    "excerpt": "Meet the organizers behind the scenes",
+    "content": "Highlighting our tournament organizers and managers"
+  }
+]

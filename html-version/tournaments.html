@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tournaments - Gaming Community</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Gaming Community</div>
+        <button class="menu-toggle" id="menuToggle">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="tournaments.html" class="active">Tournaments</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="tournaments-page">
+      <h1>Tournament Results</h1>
+      <p>View past tournament winners and results</p>
+      <div class="tournaments-grid" id="tournamentsGrid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Copyright 2024 Gaming Community. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#discord">Discord</a></li>
+        <li><a href="#twitter">Twitter</a></li>
+        <li><a href="#twitch">Twitch</a></li>
+        <li><a href="#youtube">YouTube</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="lib/utils.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>

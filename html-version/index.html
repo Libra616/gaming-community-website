@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Community - Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Gaming Community</div>
+        <button class="menu-toggle" id="menuToggle">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="tournaments.html">Tournaments</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Welcome to Gaming Community</h1>
+      <p>Where Gamers Unite</p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary">Join Discord</button>
+        <a href="members.html" class="btn btn-secondary">View Members</a>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <h2>Featured</h2>
+      <div class="featured-grid">
+        <div class="feature-card">
+          <h3>Members</h3>
+          <p>Meet our talented community members</p>
+          <a href="members.html">View Roster</a>
+        </div>
+        <div class="feature-card">
+          <h3>Tournaments</h3>
+          <p>Compete in our regular tournaments</p>
+          <a href="tournaments.html">View Results</a>
+        </div>
+        <div class="feature-card">
+          <h3>Events</h3>
+          <p>Check upcoming events and streams</p>
+          <a href="events.html">View Calendar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="upcoming-events-section">
+      <h2>Upcoming Events</h2>
+      <div class="events-preview" id="eventsPreview"></div>
+      <a href="events.html" class="view-all">View All Events</a>
+    </section>
+
+    <section class="latest-news-section">
+      <h2>Latest News</h2>
+      <div class="news-grid" id="newsGrid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Copyright 2024 Gaming Community. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#discord">Discord</a></li>
+        <li><a href="#twitter">Twitter</a></li>
+        <li><a href="#twitch">Twitch</a></li>
+        <li><a href="#youtube">YouTube</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="lib/utils.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
