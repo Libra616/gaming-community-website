@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} - {{ site.community.name }}</title>
+  <link rel="stylesheet" href="{{ "/gaming-community-website/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">{{ site.community.name }}</div>
+        <ul class="nav-links">
+          <li><a href="{{ "/gaming-community-website/" | relative_url }}">Home</a></li>
+          <li><a href="{{ "/gaming-community-website/members" | relative_url }}">Members</a></li>
+          <li><a href="{{ "/gaming-community-website/events" | relative_url }}">Events</a></li>
+          <li><a href="{{ "/gaming-community-website/tournaments" | relative_url }}">Tournaments</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; 2024 {{ site.community.name }}. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="#">Discord</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Twitch</a></li>
+    </ul>
+  </footer>
+
+  <script src="{{ "/gaming-community-website/assets/js/main.js" | relative_url }}"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+title: Gaming Community
+description: Multi-game esports and casual gaming community
+url: "https://Libra616.github.io/gaming-community-website"
+baseurl: "/gaming-community-website"
+
+# Community Configuration
+community:
+  name: Gaming Community
+  tagline: "Where Gamers Unite"
+  logo: "/images/logo.png"
+  description: "A thriving multi-game esports and casual gaming community"
+  email: "community@example.com"
+  social:
+    twitter: "twitter_handle"
+    discord: "discord_invite"
+    twitch: "twitch_channel"
+    youtube: "youtube_channel"
+
+# Jekyll Configuration
+theme: minima
+layouts_dir: _layouts
+includes_dir: _includes
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  members:
+    output: true
+    permalink: /members/:path/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/

@@ -1,0 +1,32 @@
+---
+layout: default
+title: Events & Calendar
+---
+
+<div class="events-page">
+  <h1>Upcoming Events</h1>
+  <p>Join us for tournaments, casual games, and community events</p>
+
+  <div class="events-list">
+    {% for event in site.data.events %}
+    <div class="event-card">
+      <div class="event-date">
+        <span class="month">{{ event.date | date: "%b" }}</span>
+        <span class="day">{{ event.date | date: "%d" }}</span>
+      </div>
+      <div class="event-info">
+        <h2>{{ event.title }}</h2>
+        <p class="time">⏰ {{ event.time }}</p>
+        <p class="game">🎮 {{ event.game }}</p>
+        <p class="description">{{ event.description }}</p>
+        <div class="event-meta">
+          <span class="participants">👥 {{ event.participants }}</span>
+          <span class="prize">💰 {{ event.prize_pool }}</span>
+          <span class="status {{ event.status }}">{{ event.status | capitalize }}</span>
+        </div>
+        <button class="btn btn-primary">Register</button>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

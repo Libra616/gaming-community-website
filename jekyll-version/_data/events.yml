@@ -1,0 +1,26 @@
+- title: Weekly Valorant Tournament
+  date: 2024-07-15
+  time: "19:00"
+  game: Valorant
+  description: Join our weekly competitive tournament
+  participants: 16
+  prize_pool: "$500"
+  status: upcoming
+
+- title: League of Legends Casual Night
+  date: 2024-07-18
+  time: "20:00"
+  game: League of Legends
+  description: Friendly matches and fun games
+  participants: unlimited
+  prize_pool: "Free"
+  status: upcoming
+
+- title: Community Game Jam
+  date: 2024-07-22
+  time: "15:00"
+  game: Indie Games
+  description: Showcase indie games and network
+  participants: 30
+  prize_pool: "$200"
+  status: upcoming

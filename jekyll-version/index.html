@@ -1,0 +1,46 @@
+---
+layout: default
+title: Home
+---
+
+<div class="hero">
+  <h1>Welcome to {{ site.community.name }}</h1>
+  <p>{{ site.community.tagline }}</p>
+  <a href="#" class="btn btn-primary">Join Community</a>
+  <a href="/gaming-community-website/members" class="btn btn-secondary">View Members</a>
+</div>
+
+<section class="featured">
+  <h2>Featured</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>👥 Members</h3>
+      <p>Meet our talented community members</p>
+      <a href="/gaming-community-website/members">View Roster →</a>
+    </div>
+    <div class="card">
+      <h3>🏆 Tournaments</h3>
+      <p>Compete in our regular tournaments</p>
+      <a href="/gaming-community-website/tournaments">View Results →</a>
+    </div>
+    <div class="card">
+      <h3>📅 Events</h3>
+      <p>Check upcoming events and streams</p>
+      <a href="/gaming-community-website/events">View Calendar →</a>
+    </div>
+  </div>
+</section>
+
+<section class="latest-news">
+  <h2>Latest News</h2>
+  <div class="news-grid">
+    {% for post in site.posts limit:3 %}
+    <article class="news-card">
+      <h3>{{ post.title }}</h3>
+      <p class="date">{{ post.date | date: "%b %d, %Y" }}</p>
+      <p>{{ post.excerpt }}</p>
+      <a href="{{ post.url }}">Read More →</a>
+    </article>
+    {% endfor %}
+  </div>
+</section>

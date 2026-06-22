@@ -1,0 +1,36 @@
+---
+layout: default
+title: Members
+---
+
+<div class="members-page">
+  <h1>Community Members</h1>
+  <p>Meet the talented players and organizers in our community</p>
+
+  <div class="members-grid">
+    {% for member in site.data.members %}
+    <div class="member-card">
+      <img src="{{ member.avatar }}" alt="{{ member.name }}" class="member-avatar">
+      <h2>{{ member.name }}</h2>
+      <p class="role">{{ member.role }}</p>
+      <div class="game-badge">{{ member.game }}</div>
+      <p class="rank">{{ member.rank }}</p>
+      <p class="bio">{{ member.bio }}</p>
+      <div class="social-links">
+        {% if member.links.twitch %}
+          <a href="{{ member.links.twitch }}" title="Twitch">📺</a>
+        {% endif %}
+        {% if member.links.twitter %}
+          <a href="{{ member.links.twitter }}" title="Twitter">𝕏</a>
+        {% endif %}
+        {% if member.links.discord %}
+          <a href="{{ member.links.discord }}" title="Discord">💬</a>
+        {% endif %}
+        {% if member.links.youtube %}
+          <a href="{{ member.links.youtube }}" title="YouTube">▶️</a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

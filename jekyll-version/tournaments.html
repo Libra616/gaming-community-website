@@ -1,0 +1,32 @@
+---
+layout: default
+title: Tournament Results
+---
+
+<div class="tournaments-page">
+  <h1>Tournament Results</h1>
+  <p>View past tournament winners and results</p>
+
+  <div class="tournaments-grid">
+    {% for tournament in site.data.tournaments %}
+    <div class="tournament-card">
+      <h2>{{ tournament.name }}</h2>
+      <p class="date">📅 {{ tournament.date | date: "%b %d, %Y" }}</p>
+      <p class="game">🎮 {{ tournament.game }}</p>
+      
+      <div class="podium">
+        <div class="first-place">
+          <span class="medal">🥇</span>
+          <p class="winner">{{ tournament.winner }}</p>
+        </div>
+      </div>
+      
+      <div class="tournament-details">
+        <p><strong>Runner-up:</strong> {{ tournament.runner_up }}</p>
+        <p><strong>Prize Pool:</strong> {{ tournament.prize_pool }}</p>
+        <p><strong>Participants:</strong> {{ tournament.participants }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
